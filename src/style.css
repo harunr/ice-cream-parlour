@@ -1,0 +1,15 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+
+.bg-style{ background-repeat: no-repeat; background-position: center center; background-size: cover;}
+.bottom-shape:after { content: ''; background-image: url(../svgs/tear.svg); background-repeat: no-repeat; background-position: top center; background-size: cover; width: 100%; height: 90px; position: absolute; left: 0; bottom: -56px; z-index: 9;}
+.bottom-shape:before{content: ''; position: absolute;top: 0; left:0; height: 100%; width: 100%; background-color: #000000; opacity: 0.3; }
+
+.hover-item{  transition: transform 1s ease-in-out; cursor: pointer; }
+.hover-item:hover{ -webkit-transform: scale(1.1); -ms-transform: scale(1.1); transform: scale(1.1); }
